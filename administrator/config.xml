@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="iseo" label="COM_ISEO">        
+        <fieldset name="process" label="COM_ISEO_FORM_PROCESS">
+            <field name="strategy"
+                   type="list"
+                   default="mobile"
+                   validate="options"
+                   label="COM_ISEO_FORM_STRATEGY"
+                   description="COM_ISEO_FORM_STRATEGY_DESC">
+                <option value="mobile">MOBILE</option>
+                <option value="desktop">DESKTOP</option>
+            </field>
+            <field name="performance"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PERFORMANCE"
+                   description="COM_ISEO_FORM_PERFORMANCE_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="accessibility"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_ACCESSIBILITY"
+                   description="COM_ISEO_FORM_ACCESSIBILITY_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="best_practices"
+                   type="radio" buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PRACTICES"
+                   description="COM_ISEO_FORM_PRACTICES_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="seo"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_SEO"
+                   description="COM_ISEO_FORM_SEO_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="pwa"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PWA"
+                   description="COM_ISEO_FORM_PWA_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="basic" label="COM_ISEO_FORM_SHOW">
+            <field name="show_performance"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PERFORMANCE_SHOW"
+                   description="COM_ISEO_FORM_PERFORMANCE_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="show_accessibility"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_ACCESSIBILITY_SHOW"
+                   description="COM_ISEO_FORM_ACCESSIBILITY_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="show_practices"
+                   type="radio" buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PRACTICES_SHOW"
+                   description="COM_ISEO_FORM_PRACTICES_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="show_seo"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_SEO_SHOW"
+                   description="COM_ISEO_FORM_SEO_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="show_pwa"
+                   type="radio"
+                   buttons="true"
+                   layout="joomla.form.field.radio.switcher"
+                   default="1"
+                   label="COM_ISEO_FORM_PWA_SHOW"
+                   description="COM_ISEO_FORM_PWA_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fieldset>
+    </fieldset>
+
+	<fieldset name="integration" label="JGLOBAL_INTEGRATION_LABEL">
+        <field name="use_js"
+               type="radio"
+               buttons="true"
+               layout="joomla.form.field.radio.switcher"
+               default="1"
+               label="COM_ISEO_FORM_USE_JS"
+               description="COM_ISEO_FORM_USE_JS_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="use_css"
+               type="radio"
+               buttons="true"
+               layout="joomla.form.field.radio.switcher"
+               default="1"
+               label="COM_ISEO_FORM_USE_CSS"
+               description="COM_ISEO_FORM_USE_CSS_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="pagespeed"
+               type="text"
+               label="COM_ISEO_FORM_PAGESPEED"
+               description="COM_ISEO_FORM_PAGESPEED_DESC"
+               filter="string"
+               default="https://www.googleapis.com/pagespeedonline/v5/runPagespeed"/>
+        <field name="api_key"
+               type="text"
+               label="COM_ISEO_FORM_API_KEY"
+               description="COM_ISEO_FORM_API_KEY_DESC"
+               filter="string"
+               default=""/>
+        <field name="record_hits"
+               type="radio"
+               label="JGLOBAL_RECORD_HITS_LABEL"
+               layout="joomla.form.field.radio.switcher"
+               default="1">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="sef_ids"
+               type="radio"
+               layout="joomla.form.field.radio.switcher"
+               default="0"
+               label="JGLOBAL_SEF_NOIDS_LABEL"
+               description="JGLOBAL_SEF_NOIDS_DESC"
+               filter="integer">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+	</fieldset>
+
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules"
+               type="rules"
+               component="com_iseo"
+               class="inputbox"
+               filter="rules"
+               validate="rules"
+               label="JCONFIG_PERMISSIONS_LABEL"
+               section="component"/>
+    </fieldset>
+</config>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ISEO_MENU_CAT_LIST" option="View">
+		<message><![CDATA[COM_ISEO_MENU_CAT_LIST_DESC]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="id"
+				   type="category"
+				   label="COM_ISEO_MENU_FIELD_CATID"
+				   extension="com_iseo"
+				   show_root="true"
+				   required="true"
+                   description="COM_ISEO_MENU_FIELD_CATID_DESC"/>
+		</fieldset>
+	</fields>
+</metadata>

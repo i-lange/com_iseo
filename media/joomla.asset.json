@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_iseo",
+  "version": "1.0.0",
+  "description": "сom_iseo Assets",
+  "license": "GNU General Public License version 2 or later",
+  "assets": [
+    {
+      "name": "com_iseo.admin",
+      "type": "style",
+      "uri": "com_iseo/admin.css"
+    },
+    {
+      "name": "com_iseo.admin.min",
+      "type": "style",
+      "uri": "com_iseo/admin.min.css"
+    },
+    {
+      "name": "com_iseo.admin",
+      "type": "script",
+      "uri": "com_iseo/admin.js",
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_iseo.admin.min",
+      "type": "script",
+      "uri": "com_iseo/admin.min.js",
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_iseo.front",
+      "type": "style",
+      "uri": "com_iseo/front.css"
+    },
+    {
+      "name": "com_iseo.front.min",
+      "type": "style",
+      "uri": "com_iseo/front.min.css"
+    },
+    {
+      "name": "com_iseo.front",
+      "type": "script",
+      "uri": "com_iseo/front.js",
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_iseo.front.min",
+      "type": "script",
+      "uri": "com_iseo/front.min.js",
+      "attributes": {
+        "defer": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+	<name>com_iseo</name>
+    <author>Pavel Lange</author>
+    <creationDate>2022-12-26</creationDate>
+    <copyright>(C) 2022 Pavel Lange &lt;https://ilange.ru&gt;</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>pavel@ilange.ru</authorEmail>
+    <authorUrl>https://ilange.ru/en/contact</authorUrl>
+    <version>1.0.0</version>
+	<description>COM_ISEO_XML_DESCRIPTION</description>
+	<namespace path="src">Ilange\Component\Iseo</namespace>
+    <scriptfile>script.php</scriptfile>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates</schemapath>
+        </schemas>
+    </update>
+
+	<files folder="site">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages folder="site/languages">
+		<language tag="en-GB">en-GB/com_iseo.ini</language>
+		<language tag="ru-RU">ru-RU/com_iseo.ini</language>
+	</languages>
+
+    <media destination="com_iseo" folder="media">
+        <filename>joomla.asset.json</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+	
+	<administration>
+        <menu img="class:default">COM_ISEO</menu>
+        <submenu>
+            <menu link="option=com_iseo">COM_ISEO_XML_AUDITS</menu>
+            <menu link="option=com_categories&amp;extension=com_iseo">JCATEGORY</menu>
+            <menu link="option=com_config&amp;view=component&amp;component=com_iseo">COM_ISEO_XML_CONFIGURATION</menu>
+        </submenu>
+		<files folder="administrator">
+			<file>access.xml</file>
+			<file>config.xml</file>
+			<folder>forms</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+		<languages folder="administrator/languages">
+			<language tag="en-GB">en-GB/com_iseo.ini</language>
+			<language tag="en-GB">en-GB/com_iseo.sys.ini</language>			
+            <language tag="ru-RU">ru-RU/com_iseo.ini</language>
+			<language tag="ru-RU">ru-RU/com_iseo.sys.ini</language>
+		</languages>        
+	</administration>
+
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+
+    <changelogurl>https://update.ilange.ru/com_iseo/changelog.xml</changelogurl>
+    <updateservers>
+        <server type="extension" priority="1" name="com_iseo">https://update.ilange.ru/com_iseo/updates.xml</server>
+    </updateservers>
+</extension>

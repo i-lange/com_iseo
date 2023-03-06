@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_ISEO_MENU_CATEGORY" option="View">
+        <help key="JHELP_MENUS_MENU_ITEM_ISEO_CATEGORY"/>
+        <message><![CDATA[COM_ISEO_MENU_CATEGORY_DESC]]></message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request"
+                  addfieldprefix="Joomla\Component\Categories\Administrator\Field">
+            <field name="id"
+                   type="modal_category"
+                   label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+                   extension="com_iseo"
+                   required="true"
+                   select="true"
+                   new="true"
+                   edit="true"
+                   clear="true"/>
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ISEO_MENU_LIST_RESULTS" option="View">
+        <message><![CDATA[COM_ISEO_MENU_LIST_RESULTS_DESC]]></message>
+	</layout>	
+</metadata>
