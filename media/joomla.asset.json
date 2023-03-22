@@ -45,6 +45,7 @@
       "name": "com_iseo.front",
       "type": "script",
       "uri": "com_iseo/front.js",
+      "dependencies": ["core"],
       "attributes": {
         "defer": true
       }
@@ -53,6 +54,7 @@
       "name": "com_iseo.front.min",
       "type": "script",
       "uri": "com_iseo/front.min.js",
+      "dependencies": ["core"],
       "attributes": {
         "defer": true
       }
