@@ -57,7 +57,7 @@ class DisplayController extends BaseController
      */
     public function addAudit()
     {
-        if (!Session::checkToken()) {
+        if (!Session::checkToken() && !isset($input_data['fields'][Session::getFormToken()])) {
             IseoHelper::setResponse(
                 'success',
                 [],
